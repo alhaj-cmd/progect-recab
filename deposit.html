@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking system layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h2 class="text-3xl mt-4 text-center">Upcoming your <span class="text-rose-600 bold">Balance</span> section</h2>
+    </header>
+    <section>
+        <article class="grid grid-cols-3 mr-4 mt-4">
+            <div class="text-2xl rounded mx-12 w-3/4 py-6 mt-4 text-center bg-rose-200">
+            <h2 class="font-bold mb-2">Deposite</h2>
+            <p>$<span id="deposite">00</span></p>
+            </div>
+            <div class="text-2xl rounded mx-8 w-3/4 py-6 mt-4 text-center bg-yellow-200">
+            <h2 class="font-bold mb-2">withdrow</h2>
+            <p>$<span id="withdrow">00</span></p>
+            </div>
+            <div class="text-2xl rounded mx-4 w-3/4 py-6 mt-4 text-center bg-green-200">
+            <h2 class="font-bold mb-2">Balance</h2>
+            <p>$<span id="balance-total">1240</span></p>
+            </div>
+        </article>
+    </section>
+    <section class="mt-8">
+        <div class="grid mx-12 grid-cols-2">
+            <div class="p-8 gap-4 mr-4 bg-blue-200 rounded">
+                <h2  class="text-2xl mb-4">Pleace Deposite</h2>
+                <input  id="deposite-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text"
+                placeholder="$write your Deposite">
+        
+                <button id="deposite-button" class="border px-4 py-2 text-white font-medium rounded block bg-yellow-600">click</button>
+            </div>
+            <div class="p-8 gap-4 mx-4 bg-green-300 rounded">
+                <h2 class="text-2xl mb-4">Pleace withdrow</h2>
+                <input id="withdrow-input" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text"
+                placeholder="$write your amount">
+        
+                <button id="withdrow-button" class="border px-4 py-2 text-white font-medium rounded block bg-yellow-600">click</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdrow.js"></script>
+</body>
+</html>
